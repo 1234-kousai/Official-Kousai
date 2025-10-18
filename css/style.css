@@ -85,9 +85,9 @@ body {
 
 .navbar-bg {
     position: absolute;
-    top: -0.8%;
-    left: -0.8%;
-    right: -1.07%;
+    top: 0;
+    left: 0;
+    right: 0;
     bottom: 0;
     z-index: -1;
 }
@@ -100,7 +100,8 @@ body {
 .logo {
     position: absolute;
     left: 10.4%;
-    top: 2.59%;
+    top: 50%;
+    transform: translateY(-50%);
     width: 41px;
     height: 35px;
 }
@@ -108,7 +109,8 @@ body {
 .menu-icon {
     position: absolute;
     right: 10.13%;
-    top: 2.98%;
+    top: 50%;
+    transform: translateY(-50%);
     width: 31px;
     height: 27px;
 }
