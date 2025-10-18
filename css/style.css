@@ -389,7 +389,8 @@ body {
 .filter-bar {
     position: relative;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 30px;
     padding: 0 22px;
     margin-bottom: 40px;
     border-bottom: 1px solid #7c7c7c;
@@ -403,7 +404,7 @@ body {
     color: #7c7c7c;
     background: transparent;
     border: none;
-    padding: 15px 20px;
+    padding: 15px 10px;
     cursor: pointer;
     position: relative;
 }
@@ -492,12 +493,18 @@ body {
 .project-buttons {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 8px;
 }
 
 .project-buttons .line-deco {
     width: 27px;
     height: 2px;
+    background: #fff;
+}
+
+.button-separator {
+    width: 2px;
+    height: 27px;
     background: #fff;
 }
 
@@ -512,7 +519,7 @@ body {
     background: transparent;
     border: none;
     cursor: pointer;
-    padding: 0 5px;
+    padding: 0 8px;
 }
 
 .portfolio-footer-text {
