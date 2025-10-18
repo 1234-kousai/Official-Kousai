@@ -178,82 +178,6 @@ body {
     text-align: left;
 }
 
-/* ========== IT BERRIES SECTION ========== */
-.itberries {
-    position: relative;
-    width: 375px;
-    height: 547px;
-    background: #000;
-    overflow: hidden;
-}
-
-.itberries-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #000;
-}
-
-.itberries-title {
-    position: absolute;
-    left: 50%;
-    top: 72.5px;
-    transform: translate(-50%, -50%);
-    font-family: 'Montserrat', sans-serif;
-    font-size: 25px;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 4.6345px;
-    color: #fff;
-    text-align: center;
-    z-index: 10;
-}
-
-.itberries-description {
-    position: absolute;
-    left: 49px;
-    top: 122px;
-    width: 284px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 1.387;
-    text-align: justify;
-    color: #fff;
-    z-index: 10;
-}
-
-.itberries .button-wrapper {
-    position: absolute;
-    left: 50%;
-    bottom: 101px;
-    transform: translateX(-50%);
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    z-index: 10;
-}
-
-.line-deco {
-    width: 32px;
-    height: 2px;
-    background: #fff;
-}
-
-.btn-more {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
-    font-weight: 600;
-    letter-spacing: 0.6px;
-    color: #fff;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0 5px;
-}
-
 /* ========== ABOUT SECTION ========== */
 .about {
     position: relative;
@@ -773,7 +697,6 @@ body {
 @media (max-width: 375px) {
     body,
     .hero,
-    .itberries,
     .about,
     .portfolio,
     .contact,
@@ -781,4 +704,10 @@ body {
         max-width: 100vw;
         width: 100vw;
     }
+}
+
+.line-deco {
+    width: 32px;
+    height: 2px;
+    background: #fff;
 }
