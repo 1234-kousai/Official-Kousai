@@ -536,10 +536,9 @@ body {
 .contact {
     position: relative;
     width: 375px;
-    min-height: 960px;
     background: #fff;
     background: radial-gradient(ellipse 19.1px 48px at 191px 480px, rgba(0, 0, 0, 0.16) 100%, rgba(26, 21, 21, 0) 0%);
-    padding: 62px 0;
+    padding: 62px 0 40px;
 }
 
 .contact-intro {
