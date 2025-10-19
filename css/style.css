@@ -364,10 +364,9 @@ body {
 .about {
     position: relative;
     width: 375px;
-    min-height: 2258px;
     background: #fff;
     background: radial-gradient(ellipse 19.1px 112.9px at 191px 1129px, rgba(1, 1, 1, 0.16) 100%, rgba(26, 21, 21, 0) 0%);
-    padding: 74px 0 0;
+    padding: 74px 0 40px;
 }
 
 .section-header {
@@ -468,6 +467,10 @@ body {
 .service-item {
     margin-bottom: 60px;
     transition: transform 0.3s ease;
+}
+
+.service-item:last-child {
+    margin-bottom: 20px;
 }
 
 .service-item:hover {
