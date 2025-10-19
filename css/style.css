@@ -426,13 +426,17 @@ body {
 }
 
 /* Text highlights with colors and animations */
-.about-text span[class^="highlight-"] {
+.about-text span[class^="highlight-"],
+.service-text span[class^="highlight-"],
+.family-text span[class^="highlight-"] {
     font-weight: 600;
     transition: all 0.3s ease;
     display: inline-block;
 }
 
-.about-text span[class^="highlight-"]:hover {
+.about-text span[class^="highlight-"]:hover,
+.service-text span[class^="highlight-"]:hover,
+.family-text span[class^="highlight-"]:hover {
     transform: translateY(-2px);
 }
 
