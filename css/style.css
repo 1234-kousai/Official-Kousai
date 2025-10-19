@@ -358,6 +358,17 @@ body {
     line-height: normal;
     color: #fff;
     text-align: left;
+    margin-bottom: 5px;
+}
+
+.hero-university {
+    font-family: 'Raleway', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: normal;
+    color: rgba(255, 255, 255, 0.85);
+    text-align: left;
+    letter-spacing: 0.5px;
 }
 
 /* ========== ABOUT SECTION ========== */

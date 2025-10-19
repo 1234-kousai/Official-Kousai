@@ -59,6 +59,12 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(() => heroSubtitle.classList.add('fade-in-up'), 700);
     }
 
+    const heroUniversity = document.querySelector('.hero-university');
+    if (heroUniversity) {
+        heroUniversity.dataset.animation = 'fade-in-up';
+        setTimeout(() => heroUniversity.classList.add('fade-in-up'), 850);
+    }
+
     socialIcons.forEach((icon, index) => {
         icon.dataset.animation = 'slide-in-right';
         setTimeout(() => icon.classList.add('slide-in-right'), 900 + (index * 150));
