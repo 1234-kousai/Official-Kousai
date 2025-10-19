@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', 'Noto Sans JP', sans-serif;
     width: 100%;
     max-width: 375px;
     margin: 0 auto;
@@ -306,14 +306,15 @@ body {
 }
 
 .about-text {
-    width: 265px;
+    width: 100%;
+    max-width: 315px;
     margin: 0 auto 30px;
-    padding: 0 57px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 12px;
-    font-weight: 300;
-    line-height: normal;
-    text-align: justify;
+    padding: 0 30px;
+    font-family: 'Noto Sans JP', 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.8;
+    text-align: left;
     color: #000;
 }
 
