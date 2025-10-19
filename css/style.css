@@ -69,6 +69,26 @@ body {
     }
 }
 
+/* Text shine effect - キラッと光る */
+@keyframes textShine {
+    0% {
+        background-position: -200%;
+    }
+    100% {
+        background-position: 200%;
+    }
+}
+
+/* Text glow effect - 柔らかく光る */
+@keyframes textGlow {
+    0%, 100% {
+        text-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+    50% {
+        text-shadow: 0 0 20px rgba(0, 0, 0, 0.15), 0 0 30px rgba(0, 0, 0, 0.1);
+    }
+}
+
 @keyframes heroImageFloat {
     from {
         opacity: 0;
@@ -410,6 +430,13 @@ body {
     line-height: 1.279;
     letter-spacing: 6.0953px;
     color: #000;
+    position: relative;
+    background: linear-gradient(90deg, #000 0%, #000 40%, #666 50%, #000 60%, #000 100%);
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: textShine 3s ease-in-out infinite;
 }
 
 .about-text {
@@ -425,6 +452,10 @@ body {
     color: #000;
 }
 
+.about-text.fade-in {
+    animation: fadeIn 0.8s ease-out forwards, textGlow 2s ease-out;
+}
+
 /* Text highlights with colors and animations */
 .about-text span[class^="highlight-"],
 .service-text span[class^="highlight-"],
@@ -438,6 +469,8 @@ body {
 .service-text span[class^="highlight-"]:hover,
 .family-text span[class^="highlight-"]:hover {
     transform: translateY(-2px);
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.2));
+    animation: textGlow 1.5s ease-in-out infinite;
 }
 
 /* Education - Deep Blue */
@@ -657,6 +690,11 @@ body {
     line-height: 2;
     text-align: left;
     color: #000;
+}
+
+.service-item.slide-in-left .service-text,
+.service-item.slide-in-right .service-text {
+    animation: textGlow 2s ease-out;
 }
 
 /* Skills */
@@ -1076,6 +1114,10 @@ body {
     line-height: 2;
     color: #333;
     text-align: left;
+}
+
+.family-text.fade-in-up p {
+    animation: textGlow 2s ease-out;
 }
 
 /* ========== FOOTER ========== */
