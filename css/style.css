@@ -407,9 +407,9 @@ body {
     margin: 0 auto 30px;
     padding: 0 30px;
     font-family: 'Noto Sans JP', 'Open Sans', sans-serif;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 400;
-    line-height: 1.8;
+    line-height: 2;
     text-align: left;
     color: #000;
 }
@@ -497,12 +497,13 @@ body {
 }
 
 .service-text {
-    width: 246px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 13px;
-    font-weight: 300;
-    line-height: normal;
-    text-align: justify;
+    width: 100%;
+    max-width: 280px;
+    font-family: 'Noto Sans JP', 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.9;
+    text-align: left;
     color: #000;
 }
 
@@ -918,9 +919,9 @@ body {
 
 .family-text p {
     font-family: 'Noto Sans JP', 'Open Sans', sans-serif;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 400;
-    line-height: 1.9;
+    line-height: 2;
     color: #333;
     text-align: left;
 }
