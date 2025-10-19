@@ -860,6 +860,71 @@ body {
     margin-top: 80px;
 }
 
+/* ========== FAMILY SECTION ========== */
+.family-section {
+    position: relative;
+    width: 375px;
+    background: #fff;
+    padding: 60px 30px;
+}
+
+.family-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.family-label {
+    font-family: 'Noto Sans JP', 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.family-title {
+    font-family: 'Montserrat', 'Noto Sans JP', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    background: linear-gradient(90deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.family-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.family-image-wrapper {
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.family-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.family-text {
+    width: 100%;
+}
+
+.family-text p {
+    font-family: 'Noto Sans JP', 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.9;
+    color: #333;
+    text-align: left;
+}
+
 /* ========== FOOTER ========== */
 .footer {
     position: relative;

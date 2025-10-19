@@ -160,6 +160,25 @@ document.addEventListener('DOMContentLoaded', () => {
         separator.dataset.animation = 'scale-in';
         observer.observe(separator);
     });
+
+    // Family section elements
+    const familyHeader = document.querySelector('.family-header');
+    if (familyHeader) {
+        familyHeader.dataset.animation = 'fade-in-up';
+        observer.observe(familyHeader);
+    }
+
+    const familyImageWrapper = document.querySelector('.family-image-wrapper');
+    if (familyImageWrapper) {
+        familyImageWrapper.dataset.animation = 'slide-in-left';
+        observer.observe(familyImageWrapper);
+    }
+
+    const familyText = document.querySelector('.family-text');
+    if (familyText) {
+        familyText.dataset.animation = 'fade-in-up';
+        observer.observe(familyText);
+    }
 });
 
 // Smooth scroll for back to top button
