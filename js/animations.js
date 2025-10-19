@@ -47,8 +47,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     if (heroTitle) {
-        heroTitle.dataset.animation = 'fade-in-up';
-        setTimeout(() => heroTitle.classList.add('fade-in-up'), 500);
+        const titleLines = heroTitle.querySelectorAll('.hero-title-line');
+        titleLines.forEach((line, index) => {
+            line.dataset.animation = 'fade-in-up';
+            setTimeout(() => line.classList.add('fade-in-up'), 500 + (index * 150));
+        });
     }
 
     if (heroSubtitle) {
