@@ -13,6 +13,26 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
+// Hero Image Slideshow
+let currentImageIndex = 0;
+const heroImages = document.querySelectorAll('.hero-image');
+
+function showNextImage() {
+    if (heroImages.length === 0) return;
+
+    // Remove active class from current image
+    heroImages[currentImageIndex].classList.remove('active');
+
+    // Move to next image
+    currentImageIndex = (currentImageIndex + 1) % heroImages.length;
+
+    // Add active class to new image
+    heroImages[currentImageIndex].classList.add('active');
+}
+
+// Start slideshow with 4 second interval
+setInterval(showNextImage, 4000);
+
 // Initialize animations on page load
 document.addEventListener('DOMContentLoaded', () => {
     // Hero section animations
