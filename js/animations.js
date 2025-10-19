@@ -30,8 +30,8 @@ function showNextImage() {
     heroImages[currentImageIndex].classList.add('active');
 }
 
-// Start slideshow with 4 second interval
-setInterval(showNextImage, 4000);
+// Start slideshow with 3 second interval
+setInterval(showNextImage, 3000);
 
 // Initialize animations on page load
 document.addEventListener('DOMContentLoaded', () => {
