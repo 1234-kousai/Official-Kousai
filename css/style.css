@@ -425,6 +425,143 @@ body {
     color: #000;
 }
 
+/* Text highlights with colors and animations */
+.about-text span[class^="highlight-"] {
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.about-text span[class^="highlight-"]:hover {
+    transform: translateY(-2px);
+}
+
+/* Education - Deep Blue */
+.highlight-education {
+    color: #1e40af;
+    background: linear-gradient(120deg, transparent 0%, transparent 50%, rgba(30, 64, 175, 0.1) 50%);
+    background-size: 240%;
+    transition: background-position 0.3s ease, transform 0.3s ease;
+}
+
+.highlight-education:hover {
+    background-position: 100%;
+}
+
+/* Tech/IT - Cyan Blue */
+.highlight-tech {
+    color: #0284c7;
+    position: relative;
+}
+
+.highlight-tech::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #0284c7, #06b6d4);
+    transition: width 0.3s ease;
+}
+
+.highlight-tech:hover::after {
+    width: 100%;
+}
+
+/* Brand - Purple */
+.highlight-brand {
+    color: #7c3aed;
+    font-weight: 700;
+    background: linear-gradient(120deg, transparent 0%, transparent 50%, rgba(124, 58, 237, 0.15) 50%);
+    background-size: 240%;
+    transition: background-position 0.3s ease;
+}
+
+.highlight-brand:hover {
+    background-position: 100%;
+}
+
+/* Health - Pink */
+.highlight-health {
+    color: #db2777;
+    background: linear-gradient(120deg, transparent 0%, transparent 50%, rgba(219, 39, 119, 0.1) 50%);
+    background-size: 240%;
+    transition: background-position 0.3s ease;
+}
+
+.highlight-health:hover {
+    background-position: 100%;
+}
+
+/* Marketing - Orange */
+.highlight-marketing {
+    color: #ea580c;
+    position: relative;
+}
+
+.highlight-marketing::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #ea580c, #f97316);
+    transition: width 0.3s ease;
+}
+
+.highlight-marketing:hover::after {
+    width: 100%;
+}
+
+/* Achievement - Green */
+.highlight-achievement {
+    color: #059669;
+    font-weight: 700;
+    background: linear-gradient(120deg, transparent 0%, transparent 50%, rgba(5, 150, 105, 0.12) 50%);
+    background-size: 240%;
+    transition: background-position 0.3s ease;
+}
+
+.highlight-achievement:hover {
+    background-position: 100%;
+}
+
+/* Creative - Magenta */
+.highlight-creative {
+    color: #c026d3;
+    position: relative;
+}
+
+.highlight-creative::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #c026d3, #d946ef);
+    transition: width 0.3s ease;
+}
+
+.highlight-creative:hover::after {
+    width: 100%;
+}
+
+/* Hobby - Rose */
+.highlight-hobby {
+    color: #e11d48;
+    font-weight: 600;
+    background: linear-gradient(120deg, transparent 0%, transparent 50%, rgba(225, 29, 72, 0.1) 50%);
+    background-size: 240%;
+    transition: background-position 0.3s ease;
+}
+
+.highlight-hobby:hover {
+    background-position: 100%;
+}
+
 .button-wrapper.explore-btn {
     position: relative;
     margin: 30px auto;
