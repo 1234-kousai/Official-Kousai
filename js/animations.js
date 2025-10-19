@@ -174,4 +174,32 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+
+    // Logo click - scroll to top
+    const logo = document.querySelector('.logo');
+    if (logo) {
+        logo.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
+
+    // Hamburger menu functionality
+    const menuIcon = document.querySelector('.menu-icon');
+    if (menuIcon) {
+        menuIcon.addEventListener('click', () => {
+            // For now, just smooth scroll to About section
+            // Later you can add a mobile menu overlay
+            const aboutSection = document.querySelector('.about');
+            if (aboutSection) {
+                aboutSection.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    }
 });
