@@ -15,6 +15,85 @@ body {
     position: relative;
 }
 
+/* ========== ANIMATIONS ========== */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.fade-in-up {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+.slide-in-left {
+    opacity: 0;
+    animation: slideInLeft 0.8s ease-out forwards;
+}
+
+.slide-in-right {
+    opacity: 0;
+    animation: slideInRight 0.8s ease-out forwards;
+}
+
+.scale-in {
+    opacity: 0;
+    animation: scaleIn 0.6s ease-out forwards;
+}
+
 /* ========== HERO SECTION ========== */
 .hero {
     position: relative;
@@ -131,6 +210,12 @@ body {
     width: 29px;
     height: 29px;
     display: block;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px) scale(1.1);
+    opacity: 0.8;
 }
 
 /* Hero bottom text */
@@ -257,6 +342,12 @@ body {
     border: none;
     cursor: pointer;
     padding: 0 10px;
+    transition: transform 0.3s ease, letter-spacing 0.3s ease;
+}
+
+.btn-explore:hover {
+    transform: scale(1.05);
+    letter-spacing: 1.8px;
 }
 
 .separator-image {
@@ -278,6 +369,11 @@ body {
 
 .service-item {
     margin-bottom: 60px;
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
 }
 
 .service-icon {
@@ -327,6 +423,11 @@ body {
 .skill {
     margin-bottom: 60px;
     text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.skill:hover {
+    transform: scale(1.1);
 }
 
 .skill-icon {
@@ -407,6 +508,12 @@ body {
     padding: 15px 10px;
     cursor: pointer;
     position: relative;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.filter-btn:hover {
+    color: #fffbfb;
+    transform: translateY(-2px);
 }
 
 .filter-btn.active {
@@ -433,12 +540,23 @@ body {
     width: 100%;
     height: 209px;
     margin-bottom: 0;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: scale(1.02);
 }
 
 .project-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.project:hover .project-img {
+    transform: scale(1.05);
 }
 
 .project-featured .project-overlay {
@@ -520,6 +638,13 @@ body {
     border: none;
     cursor: pointer;
     padding: 0 8px;
+    transition: transform 0.2s ease, letter-spacing 0.2s ease;
+}
+
+.btn-demo:hover,
+.btn-more-project:hover {
+    transform: scale(1.1);
+    letter-spacing: 1.5px;
 }
 
 .portfolio-footer-text {
@@ -660,6 +785,12 @@ body {
     border: none;
     cursor: pointer;
     margin-bottom: 40px;
+    transition: transform 0.3s ease, gap 0.3s ease;
+}
+
+.back-to-top:hover {
+    transform: translateY(-5px);
+    gap: 15px;
 }
 
 .back-to-top svg {
@@ -683,6 +814,12 @@ body {
     width: 30px;
     height: 30px;
     display: block;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.footer-icon:hover {
+    transform: translateY(-5px) scale(1.1);
+    opacity: 0.8;
 }
 
 .footer-copyright {
