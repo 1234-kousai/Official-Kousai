@@ -207,7 +207,8 @@ body {
 }
 
 .hero-image-right {
-    object-position: right 20%;
+    object-position: right center;
+    object-fit: contain;
 }
 
 /* Overlay gradient */
