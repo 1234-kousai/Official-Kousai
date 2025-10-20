@@ -206,6 +206,10 @@ body {
     opacity: 1;
 }
 
+.hero-image-right {
+    object-position: right top;
+}
+
 /* Overlay gradient */
 .hero-overlay-gradient {
     position: absolute;
